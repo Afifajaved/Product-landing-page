@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      /* For desktop: */
+      .col-1 {
+        width: 8.33%;
+      }
+      .col-2 {
+        width: 16.66%;
+      }
+      .col-3 {
+        width: 25%;
+      }
+      .col-4 {
+        width: 33.33%;
+      }
+      .col-5 {
+        width: 41.66%;
+      }
+      .col-6 {
+        width: 50%;
+      }
+      .col-7 {
+        width: 58.33%;
+      }
+      .col-8 {
+        width: 66.66%;
+      }
+      .col-9 {
+        width: 75%;
+      }
+      .col-10 {
+        width: 83.33%;
+      }
+      .col-11 {
+        width: 91.66%;
+      }
+      .col-12 {
+        width: 100%;
+      }
+
+      section {
+        display: flex;
+        justify-content: center;
+      }
+
+      h1 {
+        color: rgb(8, 0, 0);
+        text-shadow: 2px 2px #39ff14;
+        /* display: inline; */
+      }
+      img {
+        /* display: inline; */
+      }
+      .inline {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 5px;
+      }
+
+      #nav-bar {
+        background: rgb(1, 14, 1);
+        font-size: 20px;
+        border: 2px solid #39ff14;
+        color: #39ff14;
+        padding: 20px 10px 20px 10px;
+        margin: 1.333%;
+        text-align: center;
+      }
+      a {
+        color: #39ff14;
+        padding: 10px 20px;
+      }
+      iframe:hover {
+        transform: scale(2);
+      }
+
+      .register {
+        text-align: center;
+      }
+      @media only screen and (max-width: 768px) {
+        /* For mobile phones: */
+        [class*="col-"] {
+          width: 100%;
+        }
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+    <meta http-equi="X-UA-Compatible" content="ie-edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Product Landing Page</title>
+  </head>
+  <body>
+    <header id="header">
+      <div class="inline">
+        <img
+          id="header-img"
+          src="https://logos-world.net/wp-content/uploads/2020/11/Razer-Logo.png"
+          alt="razer-logo"
+          id="header-img"
+          width="140"
+          height="80"
+        />
+        <h1>The best technology out there!</h1>
+      </div>
+      <nav id="nav-bar">
+        <a href="#keyboard" class="nav-link"
+          >Click here to view our Keyboards</a
+        >
+        <a href="#mouse" class="nav-link">Checkout our Mouse</a>
+        <a href="#headphones" class="nav-link">Time for some Music</a>
+      </nav>
+    </header>
+    <section id="keyboard"></section>
+    <section id="mouse"></section>
+    <section id="headphones"></section>
+
+    <center>
+      <iframe
+        id="video"
+        width="320"
+        height="240"
+        src="https://www.youtube.com/embed/kfFHghqiIAU"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </center>
+    <div class="register">
+      <form action="https://www.freecodecamp.com/email-submit" id="form">
+        <h4>Register for Customer discounts</h4>
+        <label> Email Address:</label
+        ><input name="email" type="email" id="email" placeholder="Email" />
+        <input type="submit" id="submit" value="submit" />
+      </form>
+    </div>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"
+    ></script>
+  </body>
+</html>
